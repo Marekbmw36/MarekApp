@@ -4,7 +4,6 @@ namespace ConsoleApp4
 {
     public class Employee
     {
-
         private List<int> score = new List<int>();
 
         public Employee(string name, string surname, int age)
@@ -12,6 +11,7 @@ namespace ConsoleApp4
             this.Name = name;
             this.Surname = surname;
             this.Age = age;
+
         }
         public string Name { get; private set; }
 
@@ -25,13 +25,13 @@ namespace ConsoleApp4
             {
                 return this.score.Sum();
             }
-
         }
-        public void Addscore(int score)
+        public void AddScore(int score)
         {
             this.score.Add(score);
-
         }
+
     }
 }
 
+     
