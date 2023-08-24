@@ -3,7 +3,7 @@ using ConsoleApp4;
 
 Employee employee1 = new Employee("Piotr", "Nowak", 27);
 Employee employee2 = new Employee("Michał","Kowalski", 33);
-Employee employee3 = new Employee("Łukasz", "Zsanewicz", 24);
+Employee employee3 = new Employee("Łukasz", "Zdanewicz", 24);
 
 employee1.AddScore(5);
 employee1.AddScore(4);
