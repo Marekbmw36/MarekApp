@@ -19,9 +19,48 @@ namespace ConsoleApp4
 
         public void AddGrade(float grade)
         {
-            this.grades.Add(grade);
+            //3.33
+            //3.
+            int valueInint = (int)grade;   //rzutowanie zamiana float na int
 
+            if (grade >= 0 && grade <= 100)
+            {
+                this.grades.Add(grade);
+            }
+            else
+            {
+                Console.WriteLine("invalid  grade value");
+            }
         }
+        public void AddGrade(string grade)
+        {
+            if (float.TryParse(grade, out float result))
+            {
+                this.AddGrade(result);
+            }
+            else
+            {
+                Console.WriteLine("String is not float");
+            }
+        }
+        public void AddGrade(long grade)
+        {      
+
+            if (grade >= 0 && grade <= 100)
+            {
+                this.grades.Add(grade);
+            }
+            else
+            {
+                Console.WriteLine("invalid  grade value");
+            }
+        }
+        public void AddGrade(double grade)
+        {
+            float doubleToFloat = (float)grade;
+            this.AddGrade(doubleToFloat);
+        }   
+        
         public Statistics GetStatistics()
         {
             var statistics = new Statistics();
