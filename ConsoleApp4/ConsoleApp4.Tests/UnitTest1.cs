@@ -6,7 +6,7 @@ namespace ConsoleApp4.Tests
         [Test]
         public void WhhenGetStatisticsCallect_ShouldReturnCorrectMax()
         {
-            var employee = new Employee("Pawe³", "Kowalski", 27);
+            var employee = new Employee("Pawe³", "Kowalski");
             employee.AddGrade(3);
             employee.AddGrade(5);
             employee.AddGrade(6);
@@ -21,7 +21,7 @@ namespace ConsoleApp4.Tests
         [Test]
         public void WhenGetStatisticsCallect_ShouldReturnCorrectMin()
         {
-            var employee = new Employee("Pawe³", "Kowalski", 27);
+            var employee = new Employee("Pawe³", "Kowalski");
             employee.AddGrade(3);
             employee.AddGrade(5);
             employee.AddGrade(6);
@@ -36,7 +36,7 @@ namespace ConsoleApp4.Tests
         [Test]
         public void WhenGetStatisticsCallect_ShouldReturnCorrectAverage()
         {
-            var employee = new Employee("Pawe³", "Kowalski", 27);
+            var employee = new Employee("Pawe³", "Kowalski");
             employee.AddGrade(3);
             employee.AddGrade(5);
             employee.AddGrade(6);
